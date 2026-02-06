@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<System name="prestashop">
+  <Parameters>
+    <Parameter id="0" name="CustomerType" type="1">
+      <values>
+        <value>Registered</value>
+        <value>VIP</value>
+        <value>Guest</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="1" name="Product" type="1">
+      <values>
+        <value>CD_Virtual</value>
+        <value>Shirt_Combo</value>
+        <value>Poster</value>
+        <value>Watch</value>
+        <value>Hat</value>
+        <value>Shirt_NoExpress</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="2" name="ShirtCombo" type="1">
+      <values>
+        <value>NA</value>
+        <value>S_R</value>
+        <value>S_B</value>
+        <value>M_R</value>
+        <value>M_B</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="4" name="CouponCode" type="1">
+      <values>
+        <value>None</value>
+        <value>SAVE10</value>
+        <value>FREESHIP</value>
+        <value>RES10</value>
+        <value>MINUS1</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="5" name="Carrier" type="1">
+      <values>
+        <value>NA</value>
+        <value>Pickup</value>
+        <value>Express</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="6" name="HandlingFee" type="1">
+      <values>
+        <value>None</value>
+        <value>HatHandlingFee</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="8" name="Quantity" type="0">
+      <values>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>200</value>
+        <value>600</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="9" name="WatchPriceMode" type="1">
+      <values>
+        <value>Regular</value>
+        <value>VIP_Discount</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="10" name="Country" type="1">
+      <values>
+        <value>Israel</value>
+        <value>Germany</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+  </Parameters>
+  <OutputParameters />
+  <Relations />
+  <Constraints>
+    <Constraint text="(Product != &quot;Shirt_Combo&quot;) =&gt; (ShirtCombo = &quot;NA&quot;)">
+      <Parameters>
+        <Parameter name="Product" />
+        <Parameter name="ShirtCombo" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(Product = &quot;Shirt_Combo&quot;) =&gt; (ShirtCombo != &quot;NA&quot;)">
+      <Parameters>
+        <Parameter name="Product" />
+        <Parameter name="ShirtCombo" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(Product = &quot;CD_Virtual&quot;) =&gt; (Carrier = &quot;NA&quot;)&#xD;&#xA;">
+      <Parameters>
+        <Parameter name="Product" />
+        <Parameter name="Carrier" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(Product != &quot;CD_Virtual&quot;) =&gt; (Carrier != &quot;NA&quot;)&#xD;&#xA;">
+      <Parameters>
+        <Parameter name="Product" />
+        <Parameter name="Carrier" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(CouponCode = &quot;RES10&quot;) =&gt; (CustomerType = &quot;VIP&quot;)&#xD;&#xA;">
+      <Parameters>
+        <Parameter name="CouponCode" />
+        <Parameter name="CustomerType" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(WatchPriceMode = &quot;VIP_Discount&quot;) =&gt; (Product = &quot;Watch&quot; &amp;&amp; CustomerType = &quot;VIP&quot;)&#xD;&#xA;">
+      <Parameters>
+        <Parameter name="WatchPriceMode" />
+        <Parameter name="Product" />
+        <Parameter name="CustomerType" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(Product = &quot;Shirt_NoExpress&quot;) =&gt; (Carrier != &quot;Express&quot;)&#xD;&#xA;">
+      <Parameters>
+        <Parameter name="Product" />
+        <Parameter name="Carrier" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(Carrier = &quot;Pickup&quot;) =&gt; (CouponCode !=&quot;FREESHIP&quot; &amp;&amp; Quantity != 600)">
+      <Parameters>
+        <Parameter name="Carrier" />
+        <Parameter name="CouponCode" />
+        <Parameter name="Quantity" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(HandlingFee = &quot;HatHandlingFee&quot;) =&gt; (Product = &quot;Hat&quot;)">
+      <Parameters>
+        <Parameter name="HandlingFee" />
+        <Parameter name="Product" />
+      </Parameters>
+    </Constraint>
+  </Constraints>
+</System>
+

@@ -1,0 +1,56 @@
+# ACTS Test Suite Generation: Fri Jan 09 04:43:13 IST 2026
+#  '*' represents don't care value 
+# Degree of interaction coverage: 2
+# Number of parameters: 9
+# Maximum number of values per parameter: 6
+# Number of configurations: 49
+CustomerType,Product,ShirtCombo,CouponCode,Carrier,HandlingFee,Quantity,WatchPriceMode,Country
+VIP,CD_Virtual,NA,SAVE10,NA,None,2,Regular,Germany
+Guest,Shirt_Combo,S_R,FREESHIP,Express,None,3,Regular,Israel
+VIP,Shirt_Combo,S_B,RES10,Pickup,None,200,Regular,Germany
+Registered,Shirt_Combo,M_R,MINUS1,Express,None,600,Regular,Germany
+Guest,Shirt_Combo,M_B,None,Pickup,None,1,Regular,Israel
+Registered,Poster,NA,FREESHIP,Express,None,200,Regular,Israel
+VIP,Watch,NA,RES10,Express,None,600,VIP_Discount,Israel
+Guest,Hat,NA,MINUS1,Pickup,HatHandlingFee,1,Regular,Germany
+Registered,Shirt_NoExpress,NA,None,Pickup,None,3,Regular,Germany
+VIP,Shirt_Combo,S_R,None,Express,None,2,Regular,Israel
+Guest,Shirt_Combo,S_B,None,Express,None,600,Regular,Israel
+Guest,Shirt_Combo,M_R,None,Pickup,None,200,Regular,Israel
+Registered,Shirt_Combo,S_R,SAVE10,Pickup,None,1,Regular,Germany
+VIP,Shirt_Combo,S_B,SAVE10,Express,None,3,Regular,Israel
+Guest,Shirt_Combo,M_R,SAVE10,Pickup,None,2,Regular,Israel
+Registered,Shirt_Combo,M_B,SAVE10,Express,None,200,Regular,Germany
+VIP,Shirt_Combo,S_B,FREESHIP,Express,None,1,Regular,Germany
+Registered,Shirt_Combo,M_R,FREESHIP,Express,None,2,Regular,Israel
+VIP,Shirt_Combo,M_B,FREESHIP,Express,None,600,Regular,Germany
+VIP,Shirt_Combo,S_R,RES10,Pickup,None,3,Regular,Germany
+VIP,Shirt_Combo,M_R,RES10,Pickup,None,1,Regular,Germany
+VIP,Shirt_Combo,M_B,RES10,Pickup,None,2,Regular,Germany
+VIP,Shirt_Combo,S_R,MINUS1,Pickup,None,200,Regular,Israel
+Registered,Shirt_Combo,S_B,MINUS1,Pickup,None,2,Regular,Israel
+VIP,Shirt_Combo,M_B,MINUS1,Express,None,3,Regular,Israel
+Guest,CD_Virtual,NA,None,NA,None,600,Regular,Israel
+Guest,Poster,NA,None,Pickup,None,1,Regular,Germany
+Registered,Watch,NA,None,Pickup,None,3,Regular,Germany
+Registered,Hat,NA,None,Express,HatHandlingFee,200,Regular,Israel
+VIP,Poster,NA,SAVE10,Express,None,600,Regular,Israel
+Guest,Watch,NA,SAVE10,Pickup,None,1,Regular,Israel
+VIP,Hat,NA,SAVE10,Express,HatHandlingFee,2,Regular,Germany
+Guest,Shirt_NoExpress,NA,SAVE10,Pickup,None,200,Regular,Israel
+Registered,CD_Virtual,NA,FREESHIP,NA,None,3,Regular,Israel
+VIP,Watch,NA,FREESHIP,Express,None,200,VIP_Discount,Germany
+Registered,Hat,NA,FREESHIP,Express,HatHandlingFee,600,Regular,Israel
+VIP,CD_Virtual,NA,RES10,NA,None,1,Regular,Israel
+VIP,Poster,NA,RES10,Express,None,2,Regular,Germany
+VIP,Hat,NA,RES10,Express,HatHandlingFee,3,Regular,Israel
+VIP,Shirt_NoExpress,NA,RES10,Pickup,None,1,Regular,Israel
+Registered,CD_Virtual,NA,MINUS1,NA,None,200,Regular,Israel
+VIP,Poster,NA,MINUS1,Pickup,None,3,Regular,Israel
+VIP,Watch,NA,MINUS1,Pickup,None,2,VIP_Discount,Germany
+Guest,Shirt_NoExpress,NA,MINUS1,Pickup,None,2,Regular,Germany
+VIP,Shirt_Combo,M_R,RES10,Express,None,3,Regular,Israel
+VIP,Shirt_Combo,S_R,None,Express,None,600,Regular,Germany
+Guest,Hat,NA,MINUS1,Pickup,None,3,Regular,Israel
+VIP,Watch,NA,None,Express,None,1,VIP_Discount,Germany
+VIP,Watch,NA,SAVE10,Pickup,None,3,VIP_Discount,Israel
