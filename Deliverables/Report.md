@@ -1,7 +1,7 @@
 
 # Deliverables
 
-## How we prepared the SUT environment
+## How i prepared the SUT environment
 To enable full coverage of the checkout and pricing user story, I prepared the SUT by configuring several entities and rules in the PrestaShop admin panel. These configurations were required to activate all relevant variants that participate in the CTD model.
 
 ### Products
