@@ -1,10 +1,8 @@
 
 # PrestaShop Automated Test System
 
-End-to-end automated system testing for the PrestaShop checkout flow, combining  
-**combinatorial test design (CTD)** with **BDD-style UI automation** using  
-Cucumber  and Selenium .
-
+End-to-end automated system testing for the PrestaShop checkout flow, 
+combining  **combinatorial test design (CTD)** with **BDD-style UI automation** using Cucumber  and Selenium .
 
 ---
 
@@ -24,8 +22,7 @@ The system under test is the PrestaShop checkout process, including:
 - 💳 Checkout flow execution  
 - 💰 Verification of final price and applied discounts  
 
-The primary goal is to demonstrate a **structured approach to system-level test
-design** and its translation into maintainable automated tests.
+The primary goal is to demonstrate a **structured approach to system-level test design** and its translation into maintainable automated tests.
 
 ---
 
@@ -44,8 +41,7 @@ such as:
 - 🔢 Quantity and bulk pricing rules
 
 A **pairwise (2-way) coverage** strategy was used to reduce the number of test
-cases while preserving interactions between parameters that are most likely to
-expose defects.
+cases while preserving interactions between parameters that are most likely to expose defects.
 
 Pairwise combinations were generated using **ACTS (NIST)**.
 
@@ -55,8 +51,7 @@ You can find the full report about the test design and parameters in `Deliverabl
 
 ### 🧪 Automation with Cucumber & Selenium
 
-Test scenarios are written in **Gherkin** using **Cucumber**, providing a clear  
-and readable description of system behavior at the acceptance level.
+Test scenarios are written in **Gherkin** using **Cucumber**, providing a clear and readable description of system behavior at the acceptance level.
 
 Each scenario is backed by **Selenium WebDriver** step definitions that:
 
@@ -74,25 +69,20 @@ The automation layer is intentionally kept thin:
 -   Selenium steps focus on _how_ actions are executed, not _what_ is being tested
     
 
-This separation helps keep the test suite readable, easier to extend, and aligned  
-with the original test design.
+This separation helps keep the test suite readable, easier to extend, and aligned with the original test design.
 
 ---
 
-
-
 ### 🧩 Scenario Structure
 
-Generated combinations were grouped by **identical execution flow** and mapped
-to **Cucumber scenarios**.
+Generated combinations were grouped by **identical execution flow** and mapped to **Cucumber scenarios**.
 
 Each scenario:
 - ▶️ Executes a single checkout flow  
 - ✅ Validates different combinations through assertions on price, discount
   visibility, and UI state  
 
-This approach limits scenario duplication and keeps the test suite readable and
-maintainable.
+This approach limits scenario duplication and keeps the test suite readable and maintainable.
 
 ---
 
@@ -106,8 +96,7 @@ The `Deliverables/` directory contains the full test design artifacts, including
 - 🗺️ Scenario mapping
 - 📄 Assignment documentation
 
-These files document the reasoning behind the automated tests and complement the
-implementation found in the code.
+These files document the reasoning behind the automated tests and complement the implementation found in the code.
 
 ---
 
